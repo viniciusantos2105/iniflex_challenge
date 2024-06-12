@@ -1,0 +1,20 @@
+quarkus:
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: root
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/iniflex_quarkus
+  liquibase:
+    migrate-at-start: true
+    change-log: classpath:db/changelog/changelog-master.xml
+  http:
+    cors:
+      ~: true
+      origins: http://localhost:5173,http://localhost:9090
+      headers: accept, authorization, content-type, x-requested-with
+      methods: GET, OPTIONS, POST, PUT, DELETE
+  swagger-ui:
+    always-include: true
+    path: /swagger-ui
+

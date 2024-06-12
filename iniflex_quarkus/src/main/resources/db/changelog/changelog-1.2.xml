@@ -1,0 +1,35 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="3" author="vinicius">
+        <sql>
+            INSERT INTO person (person_id, person_name, person_birth_date)
+            VALUES (1, 'Maria', '2000-10-18'),
+                   (2, 'João', '1990-05-12'),
+                   (3, 'Caio', '1961-05-02'),
+                   (4, 'Miguel', '1988-10-14'),
+                   (5, 'Alice', '1995-01-05'),
+                   (6, 'Heitor', '1999-11-19'),
+                   (7, 'Arthur', '1993-03-31'),
+                   (8, 'Laura', '1994-07-08'),
+                   (9, 'Heloísa', '2003-05-24'),
+                   (10, 'Helena', '1996-09-02');
+
+            INSERT INTO employee (person_id, employee_salary, employee_role)
+            VALUES (1, 2009.44, 'Operador'),
+                   (2, 2284.38, 'Operador'),
+                   (3, 9836.14, 'Coordenador'),
+                   (4, 19199.88, 'Diretor'),
+                   (5, 2234.68, 'Recepcionista'),
+                   (6, 1582.72, 'Operador'),
+                   (7, 4071.84, 'Contador'),
+                   (8, 3017.45, 'Gerente'),
+                   (9, 1606.85, 'Eletricista'),
+                   (10, 2799.93, 'Gerente');
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
