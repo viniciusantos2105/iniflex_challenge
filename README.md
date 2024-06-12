@@ -4,6 +4,7 @@
   - Iniflex - Projeto Java Puro
   - Iniflex_Quarkus - Projeto de API com framework Quarkus
   - Iniflex_Front - Projeto fornt-end com framework vue.js
+  - Integração entre iniflex_frontend e iniflex_quarkus
 ## Iniflex
   - Padrão POO - Seguindo os principios de programação orientada a objetos, utilizando conceitos como Encapsulamentoe e Herança
   - Clean Code - Seguindo o padrão clean code, deixando o código mais limpo e prezando por qualidade
